@@ -1,0 +1,14 @@
+https://github.com/ISC-UPA/2026-2-TIID5-DB2
+
+"breadcrumbs.symbolPath": "off" Esto dejará visible solo la ruta de carpetas y el archivo.
+
+# De .ipynb a .py
+jupyter nbconvert --to script archivo.ipynb
+
+# De .py a .ipynb (requiere nbformat y jupytext)
+jupytext --to notebook archivo.py
+
+# Instalar paquetes específicos
+pip install numpy pandas
+
+print(f"{nombres[i]:<8}", end="")
