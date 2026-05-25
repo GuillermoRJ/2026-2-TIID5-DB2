@@ -1,15 +1,21 @@
 # Si deseo correrlo por fuera
 # path: C:\Apps\sqlite 
-# G:\Mi unidad\home\core\code\2026-2-TIID5-DB2\src\data>sqlite3 rh_sqlite.db "select * from users"
+# G:\Mi unidad\home\core\code\2026-2-TIID5-DB2\src\data>sqlite3 northwind.db "select * from shippers"
+# C:\dev\db\data\sqlite>sqlite3 northwind2000.sqlite "select * from shippers"
+# C:\dev\db\data\sqlite>sqlite3 northwind.db "select * from shippers"
+
+# C:\>docker exec -it db-sqlite sqlite3 /data/northwind.db "select * from shippers"
 
 # https://github.com/jpwhite3/northwind-SQLite3
 # https://www.kaggle.com/datasets/munawarsaudagar/northwind-2000-sqlite-database-simplified/data
 
-
+# Si deseo correrlo por dentro, debo instalar el paquete sqlite3
 import os
 import sys
 import sqlite3
-con = sqlite3.connect(os.path.join(os.path.dirname(__file__), '..', 'data', 'rh_sqlite.db'))
+
+db_path = os.path.join(os.path.dirname(__file__), 'data', 'rh_sqlite.db')
+con = sqlite3.connect(db_path)
 
 cur = con.cursor()
 sql ='''

@@ -12,3 +12,15 @@ jupytext --to notebook archivo.py
 pip install numpy pandas
 
 print(f"{nombres[i]:<8}", end="")
+
+interface empleadoDto {
+  id: number;
+  nombre: string;
+  apellido: string;
+  id_dep: number;
+}
+"fecha_creacion": datetime.now() # python
+ fecha_creacion: Date;           # typescript     
+Como Ejecutar.md
+
+
