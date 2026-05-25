@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS HR;
 
-drop user 'hr'@'localhost';
+drop user if exists 'hr'@'localhost';
 
 CREATE USER 'hr'@'localhost' IDENTIFIED BY 'hr';
 
