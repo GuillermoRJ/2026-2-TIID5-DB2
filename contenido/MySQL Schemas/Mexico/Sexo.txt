@@ -1,10 +1,18 @@
--- drop user 'Mexico'@'localhost';
+USE Mexico;
 
-CREATE DATABASE IF NOT EXISTS MEXICO;
+Se sabe que los estados de:
+Chiapas y Sonora es gobernado por Mujeres
 
-CREATE USER 'Mexico'@'localhost' IDENTIFIED BY 'mexico';
+Por medio de Codigo realizar lo siguiente:
+En la tabla de Ciudades:
+* Crear un atributo sexo de tipo character
+  que contenga ya sea 'H' que es Hombre
+                      'M' que es Mujer
+* Colocar pues el sexo respectivo a todas las ciudades
 
-GRANT ALL PRIVILEGES ON MEXICO.* TO 'Mexico'@'localhost';
 
--- GRANT select ON MEXICO.ciudades TO 'planos'@'localhost';
+
+					  
+
+
 
