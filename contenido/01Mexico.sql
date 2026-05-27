@@ -33,8 +33,8 @@ Use MEXICO;
    Chiapas y Sonora es gobernado por Mujeres
 
    Por medio de Codigo realizar lo siguiente:
-   En la tabla de Ciudades:
+   En la tabla de Gobernadores:
    * Crear un atributo sexo de tipo character
      que contenga ya sea 'H' que es Hombre
                          'M' que es Mujer
-   * Colocar pues el sexo respectivo a todas las ciudades
+   * Colocar pues el sexo respectivo a todos los gobernadores
