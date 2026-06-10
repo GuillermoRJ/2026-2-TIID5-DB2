@@ -11,7 +11,7 @@ where salary > 6461;
 
 select employee_id, salary
 from employees
-where salary > ( SELECT avg(salary) 
+where salary > ( select avg(salary) 
                  FROM employees);
 
 -- partidos que no sean MORENA ni PRI

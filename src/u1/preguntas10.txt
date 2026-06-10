@@ -1,0 +1,44 @@
+01 CL: Numero de citas por Ciudad
+
+02 CL: Numero de citas por Especialidad
+       sin considerar la especialidad "General"
+
+03 CL: Numero de Citas por Año.
+
+04 CL: En que mes se realizan mas citas o estan mas enfermos
+
+05 MX: Muestra los gobernadores que:
+       pertenezcan al PRI y PAN y MORENA 
+	   Que sean hombres
+
+06 MX: Total de habitantes por partido
+       Mayores a 20 millones.
+
+07 MX: Total de habitantes por partido
+  	   Que sean mujeres
+
+08 MX: Total de habitantes por partido
+       Considerando que los gobernadores sean mujeres
+       Mayores a 5 millones	de habitantes por partido   
+
+09 MX: En la tabla municipios con el atributo Nombre,
+       Se desea saber cuales tienen la palabra "San Marcos"
+
+10 MX: Averigua cual es la lada y codigo Postal de tu ciudad y municipio.
+
+
+ 	   
+	   
+        
+
+	   
+	   
+ 
+
+	   
+	   
+   
+   
+
+
+
