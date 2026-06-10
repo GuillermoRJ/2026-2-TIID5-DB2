@@ -42,7 +42,6 @@ having count(*) = (select max(conteo)
                          from citas
                          group by idpaciente) cxp
 				   );
-
 -- Usando ahora la vista
 select *
 from vw_cxp
