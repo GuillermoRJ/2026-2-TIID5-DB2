@@ -41,6 +41,8 @@ having count(*) = (select max(conteo)
                          from citas
                          group by idpaciente) cxp
 				   );
+
+
 -- Usando ahora la vista
 select *
 from vw_cxp
@@ -51,7 +53,7 @@ where conteo = (select max(conteo)
 with
   cxp as (SELECT idpaciente, count(*) AS conteo
           FROM citas
-          GROUP BY idpaciente) 
+          GROUP BY idpaciente)
 select p.idpaciente, p.nombre, conteo
 from pacientes p inner join cxp on p.idpaciente = cxp.idpaciente
 where conteo = (select max(conteo) from cxp b);

@@ -10,6 +10,9 @@ begin
 end;
 $$
 
-select fnLastDay("2026-06-15");
+select fnLastDay("2024-02-15");
 select fnLastDay(sysdate());
+select idciudad, gobernador, inicio, fnLastDay(inicio)
+from gobernadores;
+
 
