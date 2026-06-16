@@ -20,14 +20,13 @@ group by p.idpaciente, nombre;
 select p.idpaciente, nombre, conteo
 from pacientes p 
    inner join (select idpaciente, count(*) conteo
-                from citas
-                group by idpaciente)  cxp
-  on p.idpaciente = cxp.idpaciente;
-
+               from citas
+               group by idpaciente) cxp
+   on p.idpaciente = cxp.idpaciente;
 
 -- * * * Pacientes con el numero maximo de citas * * * --
 
--- Obtener primero el numero maximo: Escalar
+-- Obtener primero el numero maximo: Escalar = 2
 select max(conteo)
 from ( select idpaciente, count(*) conteo
        from citas
