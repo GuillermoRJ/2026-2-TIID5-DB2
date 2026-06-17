@@ -1,20 +1,20 @@
 delimiter $$
 CREATE FUNCTION fnLoop (n int)
-   RETURNS DECIMAL(20,0) deterministic
+   RETURNS varchar(200) deterministic
 
 BEGIN
-   DECLARE factorial DECIMAL(20,0) DEFAULT 1;
-   DECLARE counter int1;
-   SET counter = n;
+   DECLARE i int1 default 1;
+   DECLARE tabla  varchar(200) default '';
    
    ciclo: loop
-      if counter <= 1 then LEAVE ciclo;
+      if i > 10 then LEAVE ciclo;
       end if;
-	  SET factorial = factorial * counter;
-	  SET counter = counter - 1;
+	  SET tabla = concat(tabla, n, " X ", i, ' = ', n*i, '\n');
+	  SET i = i + 1;
    END loop ciclo;
-   RETURN factorial;
+   RETURN tabla;
 END;
 $$
 
-select fnLoop(4);
+select fnLoop(7);
+
