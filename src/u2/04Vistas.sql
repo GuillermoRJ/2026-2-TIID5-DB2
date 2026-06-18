@@ -56,7 +56,7 @@ with
           GROUP BY idpaciente)
 select p.idpaciente, p.nombre, conteo
 from pacientes p inner join cxp on p.idpaciente = cxp.idpaciente
-where conteo = (select max(conteo) from cxp b);
+where conteo = (select max(conteo) from cxp);
 
 				
 
