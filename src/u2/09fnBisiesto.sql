@@ -22,5 +22,10 @@ begin
 end;
 $$
 
-select fnBisiesto(2025);
+select fnBisiesto(2024);
+select fnBisiesto(year("2026-06-18"));
+
+select Gobernador, inicio
+from gobernadores
+where fnBisiesto(year(inicio));
 
