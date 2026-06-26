@@ -27,5 +27,5 @@ select fnBisiesto(year("2026-06-18"));
 
 select Gobernador, inicio
 from gobernadores
-where fnBisiesto(year(inicio));
+where fnBisiesto(year(inicio))=1;
 

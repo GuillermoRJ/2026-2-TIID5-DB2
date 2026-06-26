@@ -1,5 +1,5 @@
 delimiter $$
-create function fnCase (dato double)
+create function fnCase (dato int)
 returns char(10) deterministic
 begin
    declare leyenda char(10);
